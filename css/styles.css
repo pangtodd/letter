@@ -1,0 +1,9 @@
+#Letter {
+  display:none;
+}
+
+.firstName, .lastName, .carType, .domicle {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  color: darkred;
+}
