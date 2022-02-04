@@ -1,14 +1,12 @@
 $(document).ready(function(){
   $(".form-uno").submit(function(event) {
-    const firstNameInput=$("input#firstName").val();
-    const lastNameInput=$("input#lastName").val();
-    const carTypeInput=$("input#carType").val();
-    const domicleInput=$("input#domicle").val();
-
-    $(".firstName").append(firstNameInput);
-    $(".lastName").append(lastNameInput);
-    $(".carType").append(carTypeInput);
-    $(".domicle").append(domicleInput);
+    answer=[]
+    answer.push($("input#firstName").val(), $("input#lastName").val(), $("input#carType").val(), $("input#domicle").val())
+    
+    $(".firstName").append(answer[0]);
+    $(".lastName").append(answer[1]);
+    $(".carType").append(answer[2]);
+    $(".domicle").append(answer[3]);
 
     $("#letter").show();
     $(".form-uno").hide();
